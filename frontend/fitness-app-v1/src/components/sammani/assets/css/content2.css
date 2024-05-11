@@ -1,0 +1,99 @@
+
+.share-input:focus {
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+.share-input {
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+.publish {
+  border-radius: 0px!important;
+  background: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.publish:hover {
+  border-radius: 0px!important;
+  background: rgb(22,22,232);
+  color: #fff;
+  cursor: pointer;
+}
+
+.share i {
+  color: rgb(24, 24, 164) !important;
+}
+
+.share {
+  cursor: pointer;
+}
+
+.ads-text {
+  font-size: 10px;
+}
+
+.ads-content span {
+  font-size: 12px;
+}
+
+.time {
+  font-size: 12px;
+  color: blue;
+}
+
+.profile-content span {
+  font-size: 12px;
+}
+
+.content-image img {
+  width: 85%;
+ margin-left: 30px;
+}
+
+.ads-content img {
+  width: 100%;
+}
+.faa {
+    margin-top: 5px;
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:20px;
+    color: #ffffff;
+    }
+
+
+
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%; /* Position the dropdown below the button */
+      left: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000; /* Ensure the dropdown appears above other elements */
+    }
+    
+    .dropdown-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .dropdown-menu li {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+    
+    .dropdown-menu li:hover {
+      background-color: #f0f0f0;
+    }
+    

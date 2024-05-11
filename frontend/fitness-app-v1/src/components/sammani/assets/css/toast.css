@@ -1,0 +1,43 @@
+.Toastify__toast-container {
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 20px;
+    width: 320px;
+    height: 100px;
+    box-sizing: border-box;
+  }
+  
+  .Toastify__toast-container--top-left {
+    top: 0;
+    left: 0;
+  }
+  
+  .Toastify__toast-container--top-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .Toastify__toast-container--top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  .Toastify__toast-container--bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .Toastify__toast-container--bottom-center {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .Toastify__toast-container--bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  

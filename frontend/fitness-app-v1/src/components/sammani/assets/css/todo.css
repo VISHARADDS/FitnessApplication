@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+    box-sizing: border-box;
+}
+body{
+   
+   
+    /* color: white; */
+   
+    align-items: center;
+    justify-content: center;
+   
+}
+.mainContainer{
+    /* width: 25%; */
+    margin-top: 10px;
+    height: 70vh;
+    background-color: #191825;
+    padding: 10px;
+    border-radius: 6px;
+}
+.currentDay{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ff7aa8;
+}
+.dateMonth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+    height: 55px;
+}
+
+.toDoAdd{
+    background-color: #20262E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 8px ;
+    
+    
+
+}
+.AddText{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.addList{
+    width: 75%;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #20262E;
+    border: 1px solid #ff7aa8af;
+    color: white;
+}
+
+.addList:focus{
+    outline: none;
+}
+.addButton{
+    padding: 5px 25px;
+    border-radius: 45px;
+    background-color: #ff7aa8;
+    border: 1px solid rgba(255, 255, 255, 0.474);
+    color: white;
+}
+
+
+.description {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #20262E;
+    border: 1px solid #ff7aa8af;
+    color: white;
+    height: 40px;
+    display: block; /* Change display property */
+}
+
+.description:focus {
+    outline: none;
+}
+
+
+.ListOfWork{
+   
+    max-height: 52%;
+    width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.ListOfWork::-webkit-scrollbar, .pinTopDiv::-webkit-scrollbar{
+    width: 0px;
+}
+.taskActive{
+    position: relative;
+     width: 100%;
+    height: auto;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #20262E;
+    margin-top: 5px;
+    color: white;
+
+
+}
+
+.taskActive h2:focus, .taskActive div:focus{
+    outline: 1px dotted white;
+    border-radius: 4px;
+    padding: 2px;
+    width: 80%;
+    cursor: pointer;
+}
+.editing{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: none;
+    color: #ff7aa8;
+
+
+}
+
+.editAllText{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    width: 100px;
+    height: auto;
+    background-color:#20262E;
+  display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4px;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+}
+.editing:hover .editAllText{
+    visibility: visible;
+}
+.TextAdded, .descriptionAdded{
+    
+    font-size: 20px;
+    padding: 3px;
+    width: 85%;
+    border-radius: 6px;
+    margin: 3px;
+    margin-left: 20px;
+}
+ .descriptionAdded{
+     font-size:15px ;
+ }
+
+
+.editInnerText, .removeInnerText, .pinTop{
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff7aa8;
+    border: 0px;
+
+
+}
+.editInnerText:hover, .removeInnerText:hover, .pinTop:hover, .addButton:hover{
+     background-color: #ff7aa8c6;
+     transition: 0.5s;
+}
+.taskDone{
+position: absolute;
+left: 8px;
+top: 18px;
+ width: 13px;
+  height: 13px;
+
+
+}
+
+.pinTopDiv{
+    width: 100%;
+    max-height: 100px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff7aa8;
+    overflow-y: scroll;
+    position: relative;
+    padding: 10px 5px ;
+}
+
+.description, .addingNote{
+    display: none;
+}
+
+@media(max-width:700px){
+    .mainContainer{
+        width: 97%;
+    }
+}
+
+.numberPinned{
+    padding: 4px;
+    border-radius: 6px;
+    background-color: #ff7aa8;
+    font-size: 13px;
+}
+
+
+.taskActive2{
+    position: relative;
+     width: 100%;
+    height: auto;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #3e7cb1;
+    margin-top: 5px;
+    color: white;
+
+
+}
+
+.editing2{
+    position: absolute;
+    top: 10px;
+    margin-left: 280px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: none;
+    color: #ff7aa8;
+
+
+}
+
+
+
+
+
+
+
+.modaltodo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 930px;
+    margin-top: 210px;
+    width: 28%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-todo {
+    background-color: white;
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 310px;
+    height: 120px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
