@@ -3,7 +3,6 @@ import NewsFeed from "./components/sammani/NewsFeed.js";
 import WorkoutPlan from "./components/sammani/WorkoutPlan.js";
 import Schedule from "./components/sammani/Schedule.js";
 import TimeTable from "./components/sammani/TimeTable.js";
-import MealPlan from "./components/sandaru/MealPlans.js";
 import Login from "./components/sammani/Login.js";
 
 
@@ -20,7 +19,6 @@ function App() {
         <Route path="/workout-plan/:username" element={<WorkoutPlan/>} />
         <Route path="/weekly-schedule" element={<Schedule/>} />
         <Route path="/q" element={<TimeTable/>} />
-        <Route path="/Meal-Plan" element={<MealPlan/>} />
        
     
        
